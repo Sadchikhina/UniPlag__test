@@ -1,0 +1,19 @@
+.catalog {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.catalog__item {
+  width: ~"calc(50% - 110px)";
+  text-align: right;
+
+  &:nth-child(2n) {
+    text-align: left;
+  }
+}
+
+.catalog__title {
+  color: @grey-dark;
+  text-transform: uppercase;
+}

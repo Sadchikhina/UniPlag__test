@@ -1,0 +1,25 @@
+.cite-nav {
+  .list();
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.cite-nav__item {
+  padding: 30px 15px;
+
+  a {
+    text-decoration: none;
+    color: @grey-text;
+    text-transform: uppercase;
+  }
+
+  &--active {
+
+    a {
+      color: @white;
+    }
+
+    background-color: @blue;
+  }
+}
