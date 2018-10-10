@@ -6,9 +6,11 @@
 }
 
 .cite-nav__item {
-  padding: 30px 15px;
+  position: relative;
+  padding: 33px 12px;
 
   a {
+    font-size: 19px;
     text-decoration: none;
     color: @grey-text;
     text-transform: uppercase;
@@ -21,5 +23,21 @@
     }
 
     background-color: @blue;
+  }
+
+  &--search {
+    width: 70px;
+    background-image: url("../img/icon-loupe.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 45%;
+  }
+
+  &:hover:not(&--active) {
+    background-color: @grey-dark;
+  }
+
+  &:hover .cite-nav__list {
+    display: flex;
   }
 }

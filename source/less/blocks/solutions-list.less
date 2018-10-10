@@ -1,13 +1,29 @@
 .solutions-list {
   .list();
-
+  
+  position: absolute;
+  left: 0;
+  top: 88px;
+  width: 193px;
+  height: 126px;
+  flex-direction: column;
   background-color: @grey-dark;
+  padding-top: 14px;
   display: none;
 }
 
 .solutions-list__item {
+	padding-top: 7px;
+	padding-bottom: 8px;
+	padding-left: 23px;
+
   a {
+    font-size: 11px;
     color: @white;
     text-transform: capitalize;
+  }
+
+  &:hover {
+  	background-color: @blue;
   }
 }
