@@ -1,6 +1,6 @@
 .solutions-list {
   .list();
-  
+
   position: absolute;
   left: 0;
   top: 88px;
@@ -25,5 +25,21 @@
 
   &:hover {
   	background-color: @blue;
+  }
+}
+
+@media (max-width: @tablet-width) {
+  .solutions-list {
+    top: 0;
+    width: 250px;
+    height: 126px;
+  }
+
+  .solutions-list__item {
+  	padding-left: 0;
+
+    a {
+      font-size: 15px;
+    }
   }
 }

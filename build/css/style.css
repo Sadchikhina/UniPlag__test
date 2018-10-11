@@ -535,3 +535,16 @@ html {
 .solutions-list__item:hover {
   background-color: #19bfef;
 }
+@media (max-width: 768px) {
+  .solutions-list {
+    top: 0;
+    width: 250px;
+    height: 126px;
+  }
+  .solutions-list__item {
+    padding-left: 0;
+  }
+  .solutions-list__item a {
+    font-size: 15px;
+  }
+}
