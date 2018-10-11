@@ -28,7 +28,6 @@
     padding-right: 150px;
 
     &::after {
-      top: 0;
       left: 23px;
     }
   }
@@ -81,4 +80,18 @@
 .catalog__text {
   font-size: 12px;
   line-height: 19px;
+}
+
+@media (max-width: @tablet-width) {
+
+  .catalog__item {
+    width: 100%;
+    padding-left: 125px;
+    text-align: left;
+    margin-bottom: 20px;
+
+    &::after {
+      left: 23px;
+    }
+  }
 }
