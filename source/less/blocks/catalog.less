@@ -1,6 +1,7 @@
 .catalog {
   display: flex;
   flex-wrap: wrap;
+  margin-left: 158px;
 }
 
 .catalog__item {
@@ -93,5 +94,26 @@
     &::after {
       left: 23px;
     }
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .catalog {
+    margin-left: 0;
+  }
+
+  .catalog__item {
+   padding-left: 0;
+   padding-right: 0;
+
+   &::after {
+     display: none;
+   }
+
+   &:nth-child(2n) {
+     text-align: left;
+     padding-left: 0;
+     padding-right: 0;
+   }
   }
 }
